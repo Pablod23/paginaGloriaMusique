@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<title>Gloria Musique Luther&iacute;a de Vientos</title>
+<meta charset="utf-8"/>
+<meta name="description" content="sitio-gloria-musique-lutheria de vientos" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="logo.ico"/>
+<link rel= "stylesheet"  href="css/flexslider.css"/>
+<link rel= "stylesheet" href="css/estilos.css"/>
+<link rel= "stylesheet"  href="css/my_style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+   <script type="text/javascript">
+		$(window).load(function() {
+      
+      function slider(id){
+      	$("div.flexslider").remove();
+      	var DivForSlider = document.getElementById('foto-perfil');
+      	var SliderText = '<div class="flexslider"><ul class="slides">';
+      	if(id === "perf-2"){
+      		// slider for second punct of menu
+      		SliderText += '<li><img src="photo/perf/G5.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G6.jpg"></li>';	
+			SliderText += '<li><img src="photo/perf/G7.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G8.jpg"></li>';
+      	}	
+      	else if(id === "perf-3"){
+      		// slider for 3 punct of menu
+      		SliderText += '<li><img src="photo/perf/G9.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G10.jpg"></li>';	
+			SliderText += '<li><img src="photo/perf/G11.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G12.jpg"></li>';	
+      	}
+      	else{
+      		// slider for first punct of menu
+      		SliderText += '<li><img src="photo/perf/G1.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G2.jpg"></li>';
+      		SliderText += '<li><img src="photo/perf/G3.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G4.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G13.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G14.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G15.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G16.jpg"></li>';
+			SliderText += '<li><img src="photo/perf/G17.jpg"></li>';
+			
+      	}
+      	SliderText += '</ul></div>';
+      	DivForSlider.innerHTML = SliderText;
+     		$('.flexslider').flexslider();
+      }
+
+
+      for(var i=1;i<=3;i++){
+        $('#list-perf-'+i).css({"visibility":"hidden"});   
+      }
+      $('#perf-1').css({"background-color":"#333"});
+	  $('#perf-1').css({"color":"#f1f1f1"});
+      $('#list-perf-1').css({"visibility":"visible"});
+			slider();
+
+			$('.flexslider').flexslider();
+            $('#perf-menu-list>li').click(function(){
+                slider(this.id);
+                for(var i=1;i<=3;i++)
+                {
+					$('#perf-'+i).css({"background-color":"#fbe62d"});
+					$('#perf-'+i).css({"color":"#1A1A1A"});
+                    $('#list-perf-'+i).css({"visibility":"hidden"});
+                }
+            $(this).css({"background-color":"#333"});
+			$(this).css({"color":"#F1F1F1"});
+            $("#list-"+this.id).css({"visibility":"visible"});
+            //Delete slider
+     });
+		});
+        
+	</script>
+  <style>
+    #foto-perfil{ margin:0 auto; width:110%; display:block;}
+
+  </style>
+</head>
+<body>
+<header>
+<h1 id='header-logo'>
+<a href="index.html">
+    <img class="fade" alt="gloria musique lutheria de vientos" src="img/logo3.png">
+</a>
+</h1>
+<nav>
+<div id="nav">
+<ul> 
+<li><a href="index.html">Inicio</a></li> 
+<li><a href="perfil-luthier.html">Perfil del Luthier</a></li> 
+<li><a href="#">Servicios</a> 
+  <ul> 
+    <li><a href="#">Luther&iacute;a</a> 
+      <ul> 
+        <li><a href="mantenimiento.html">Mantenimiento</a></li> 
+        <li><a href="reparacion.html">Reparaci&oacute;n</a></li> 
+        <li><a href="overhaul.html">Overhaul</a></li> 
+        <li><a href="reconstruccion.html">Reconstrucci&oacute;n</a></li> 
+      </ul>       
+    </li> 
+    <li><a href="capacitaciones.html">Capacitaciones</a></li>
+    <li><a href="venta-de-instrumentos.html">Venta de Instrumentos de Medio Uso</a></li>
+  </ul> 
+</li> 
+<li><a href="#">Nuestros Clientes</a>
+		<ul>
+			<li><a href="vientos metales.html">Vientos Metales</a></li>
+			<li><a href="vientos maderas.html">Vientos Maderas</a></li>
+			</ul>
+<li><a href="nuestros amigos.html">Nuestros Amigos</a></li> 
+<li><a href='#'>Galer&iacute;a</a>
+<ul>
+			<li><a href="viajes.html">Viajes</a></li>
+			<li><a href="miscelaneos.html">Miscel&aacute;neos</a></li>
+			</ul>
+<li><a href="contacto.html">Contacto</a></li> 
+</ul>  
+</div>
+</nav>
+<div id='right-logo'>
+<img src='img/napbirt_logo_color.png'>
+</div>
+</header>
+<section id="contenido">
+<section id="principal-perfil">
+<div class='content'>
+    <div id="perf-menu">
+        <ul id="perf-menu-list">
+        <br/><br/>
+            <li id='perf-1'>Formaci&oacute;n en Luther&iacute;a</li>
+            <li id='perf-2'>Formaci&oacute;n Musical y Experiencia Pedag&oacute;gica</li>
+            <li id='perf-3'>Prestaci&oacute;n del Servicio Luth&iacute;er</li>
+        </ul>
+    </div>
+    <article id="parrafop-new">
+        <div id='perf-left'>
+            <ul id='list-perf-1'>
+              <br><br><br><br><br><br><br><br>
+                <li>Puurs – B&eacute;lgica: estudios con el maestro Francois Louis, eminencia de la luther&iacute;a mundial, cuyos clientes son ganadores de premios Grammy.</li> 
+				<br>
+				<li>Bogot&aacute; – Colombia: invitado al Segundo Seminario Latinoamericano de T&eacute;cnicos Yamaha, donde realiz&oacute; estudios con el destacado t&eacute;cnico español Emilio Mart&iacute;nez.</li>
+				<br>
+				<li>Caracas – Venezuela: Representante de Ecuador al Tercer Seminario Latinoamericano de T&eacute;cnicos Yamaha.</li>
+				<br>
+				<li>Medell&iacute;n – Colombia: preparaci&oacute;n con el maestro Gonzalo Saldarriaga destacado luthier en t&eacute;cnica Japonesa.</li>
+				<br>
+				<li>Tampa – Florida: Invitado a la 34 Convenci&oacute;n de la National Association of Professional Band Instrument Repair Technicians (NAPBIRT) de los Estados Unidos, siendo uno de los primeros latinoamericanos en formar parte de ese organismo.</li>
+				<br>
+            </ul>
+            <ul id='list-perf-2'>
+            <br><br><br>
+			  <h3>Educaci&oacute;n Musical</h3>
+            <br>
+				<li>Escuela de la Orquesta Sinf&oacute;nica del Ecuador. </li> 
+				<li>Conservatorio Nacional de M&uacute;sica, especialidad Flauta Traversa.</li>
+				<li>Conservatorio Real de Bruselas - B&eacute;lgica.</li>
+				<li>Conservatorio Real de Gante – B&eacute;lgica.</li>
+				<li>Academia de Schaerbeck B&eacute;lgica.  Obtenci&oacute;n del T&iacute;tulo de perfeccionamiento II a la unanimidad del jurado 1996. </li>
+   				<li>Licenciado en Ciencias de la Educaci&oacute;n especialidad M&uacute;sica, título otorgado por la Universidad Central del Ecuador.</li>
+    			<li>Cursando magister en Gerencia y Liderazgo Educacional.</li>
+			<br>
+			  <h3>Experiencia  Musical</h3>
+			<br>
+				<li>Miembro fundador de la Banda Sinf&oacute;nica del Consejo Provincial de Pichincha.</li>
+    			<li>Miembro fundador de la Banda Sinf&oacute;nica Metropolitana de Quito.</li>
+    			<li>Integrante de la Orquesta Sinf&oacute;nica Nacional del Ecuador (varias temporadas).</li>
+    			<li>Integrante de la Orquesta Sinf&oacute;nica de Guayaquil (varias temporadas).</li>
+    			<li>Participante de ocho Festivales Internacionales de Flautistas representando al Ecuador.</li>
+    			<li>Como m&uacute;sico solista ha realizado giras musicales por Espa&ntilde;a, B&eacute;lgica, Holanda, Francia, Luxemburgo, Venezuela, Colombia, Chile, Argentina, Uruguay y Brasil.</li>
+			<br>
+			  <h3>Experiencia  Pedag&oacute;gica</h3>
+			<br>
+			  	<li>Profesor de Flauta Traversa del Conservatorio Nacional de M&uacute;sica de Quito, 1998 - 2008.</li>
+    			<li>Director del &aacute;rea de Vientos - Maderas del Conservatorio Nacional de M&uacute;sica de Quito, 2002- 2008.</li>
+				<li>Profesor de Flauta Traversa Academia Cotopaxi, 2002 - 2004.</li>
+				<li>Profesor de Flauta Traversa Academia Alianza de Quito, 1996 - 2004.</li>    
+				<li>Profesor de Flauta Traversa Colegio Americano de Quito, 2003 - 2006.</li>
+				<li>Director de la Banda Sinf&oacute;nica  del Colegio Americano de Quito, 2005  2010.</li><br/><br/><br/>
+            </ul>
+            <ul id='list-perf-3'>
+			<br><br><br>
+                <li>Integrantes de la Orquesta Sinf&oacute;nica de Chile.</li>
+   				<li>Integrantes de instituciones musicales en Sao Paulo – Brasil.</li>
+    			<li>Integrantes de la Orquesta Sinf&oacute;nica de Corrientes – Argentina.</li>
+    			<li>Integrantes de la Orquesta Sinf&oacute;nica de Cuenca – Ecuador.</li>
+    			<li>Banda Sinf&oacute;nica Metropolitana de Quito.</li>
+    			<li>Banda Sinf&oacute;nica del Consejo Provincial de Pichincha.</li>
+    			<li>Banda Municipal de Quito  (Certificaci&oacute;n del Alcalde Paco Moncayo).</li>
+    			<li>Orquesta Filarm&oacute;nica del Ecuador.</li>
+    			<li>Orquesta Sinf&oacute;nica Nacional del Ecuador.</li>
+    			<li>Conservatorio Nacional de M&uacute;sica de Quito.</li>
+    			<li>Conservatorio La Merced de Ambato.</li>
+    			<li>Unidad Educativa Quitumbe.</li>
+    			<li>Colegio Luis Ulpiano de la Torre Cotacachi.</li>
+    			<li>Orquesta Sinf&oacute;nica de Guayaquil.</li>
+    			<li>Colegio Americano de Quito.</li>
+    			<li>Colegio Menor San Francisco de Quito.</li>
+    			<li>Academia Cotopaxi de Quito.</li>
+    			<li>Academia Alianza de Quito.</li>
+    			<li>M&uacute;sicos Profesionales de las m&aacute;s prestigiosas instituciones musicales del Ecuador.</li>
+            </ul>
+        </div>
+        <div id='perf-right'>
+            <div id="foto-perfil">
+              
+						</div>
+					</div>
+    </article>
+</div>
+</section>
+</body>
+</html>

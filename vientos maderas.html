@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<title>Gloria Musique Luther&iacute;a de Vientos</title>
+<meta charset="utf-8"/>
+<meta name="description" content="sitio-gloria-musique-lutheria de vientos" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="logo.ico"/>
+<link rel= "stylesheet"  href="css/flexslider.css"/>
+<link rel= "stylesheet" href="css/estilos.css"/>
+<link rel= "stylesheet"  href="css/my_style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+		$(window).load(function() {
+
+      function slider(id){
+        $("div.flexslider").remove();
+        var DivForSlider = document.getElementById('foto-perfil');
+        var SliderText = '<div class="flexslider"><ul class="slides">';
+        if(id === "perf-2"){
+          // slider for second punct of menu
+          SliderText += '<li><img src="photo/mad/M10.jpg"><div><h4>MTRO. DANNY GALLEGOS</h4><br><p>Destacado clarinetista Ecuatoriano.</p></div></li>';
+		  SliderText += '<li><img src="photo/mad/M11.jpg"><div><h4>MTRO. DANNY GALLEGOS</h4><br><p>Destacado clarinetista Ecuatoriano.</p></div></li>';
+          SliderText += '<li><img src="photo/mad/M12.jpg"><div><h4>MTRA. LORENA ROSALES</h4><br><p>Destacada clarinetista Ecuatoriana.</p></div></li>';  
+        } 
+        else if(id === "perf-3"){
+          // slider for 3 punct of menu
+          SliderText += '<li><img src="photo/mad/M13.jpg"><div><h4>MTRO. FRANCISCO LARA</h4><br><p>Reconocido saxofonista, Coordinador de Vientos IMC Berklee International Network de la Universidad San Francisco de Quito.</p></div></li>';
+		  SliderText += '<li><img src="photo/mad/M14.jpg"><div><h4>MTRO. LARRY SALGADO</h4><br><p>Reconocido saxofonista, arreglista y compositor, director de la Big Band del Conservatorio Superior Nacional de M&uacute;sica de Quito.</p></div></li>';
+		  SliderText += '<li><img src="photo/mad/M15.jpg"><div><h4>MTRO. IVÁN ACOSTA</h4><br><p>Destacado saxofonista de la Banda Sinf&oacute;nica Municipal de Quito.</p></div></li>';
+		  SliderText += '<li><img src="photo/mad/M16.jpg"><div><h4>MTRO. LUCHO GORD&Oacute;N</h4><br><p>Destacado saxofonista de m&uacute;sica Ecuatoriana, integrante de la Banda Sinfónica de Pichincha.</p></div></li>';
+		  SliderText += '<li><img src="photo/mad/M17.jpg"><div><h4>MTRO. DANILO CHANCHAY</h4><br><p>Saxofonista destacado integrante de la Banda Sinf&oacute;nica del Municipio de Quito, gerente propietario de Novamusic.</p></div></li>';
+		  	  
+        }
+        else{
+          // slider for first punct of menu
+          SliderText += '<li><img src="photo/mad/M1.jpg"><div><h4>MTRO. LUCIANO CARRERA</h4><br><p>Flautista de renombre internacional, atril principal de la Orquesta Sinf&oacute;nica Nacional del Ecuador, creador del festival internacional de flautistas en el centro del mundo.</p></div></li>';
+          SliderText += '<li><img src="photo/mad/M2.jpg"><div><h4>MTRO. GUSTAVO LOVATO</h4><br><p>Destacado flautista, director de la casa de la m&uacute;sica, Decano de m&uacute;sica de la Universidad de los Hemisferios.</p></div></li>';
+          SliderText += '<li><img src="photo/mad/M3.jpg"><div><h4>MTRA. EUGENIA AIZAGA</h4><br><p>Destacada flautista y picolista de la Orquesta Sinf&oacute;nica Nacional del Ecuador, directora de la escuela Suzuki del Ecuador.</p></div></li>';  
+		  SliderText += '<li><img src="photo/mad/M4.jpg"><div><h4>MTRO. DANIEL VELASCO</h4><br><p>Destacado flautista internacional, ganador de varios de los concursos m&aacute;s prestigiosos de los Estados Unidos.</p></div></li>';  
+          SliderText += '<li><img src="photo/mad/M5.jpg"><div><h4>MTRO. JULI&Iacute;N PONT&Oacute;N</h4><br><p>Destacado flautista y compositor Ecuatoriano.</p></div></li>';
+          SliderText += '<li><img src="photo/mad/M6.jpg"><div><h4>MTRA. SANDRA T&Uacute;QUERES</h4><br><p>Destacada flautista de la Orquesta Sinf&oacute;nica Nacional del Ecuador.</p></div></li>';
+          SliderText += '<li><img src="photo/mad/M7.jpg"><div><h4>MTRO. LUIS FERNANDO CARRERA</h4><br><p>Destacado flautista y compositor ecuatoriano, flautista de la Orquesta Sinf&oacute;nica Nacional del Ecuador, catedr&aacute;tico de flauta traversa en el Conservatorio Franz Liszt y en el Colegio Alem&aacute;n.</p></div></li>';  
+		  SliderText += '<li><img src="photo/mad/M8.jpg"><div><h4>MTRA. ROC&Iacute;O LIMA</h4><br><p>Destacada flautista Ecuatoriana titulada con honores en la Universidad del Norte de Iowa Estados Unidos.</p></div></li>';  
+		  SliderText += '<li><img src="photo/mad/M9.jpg"><div><h4>MTRO. NURY ULATE SOLIS</h4><br><p>Flautista principal de la Orquesta Filarm&oacute;nica de Jalisco-M&eacute;xico.</p></div></li>';
+		}
+        SliderText += '</ul></div>';
+        DivForSlider.innerHTML = SliderText;
+        $('.flexslider').flexslider();
+      }
+
+       for(var i=1;i<=3;i++){
+        $('#list-perf-'+i).css({"visibility":"hidden"});   
+      }
+      $('#perf-1').css({"background-color":"#333"});
+	  $('#perf-1').css({"color":"#F1F1F1"});
+      $('#list-perf-1').css({"visibility":"visible"});
+slider();
+      $('#perf-menu-list>li').click(function(){
+        slider(this.id);
+                for(var i=1;i<=3;i++)
+                {
+                    $('#perf-'+i).css({"background-color":"#FBE62D"});
+					$('#perf-'+i).css({"color":"#1A1A1A"});
+                    $('#list-perf-'+i).css({"visibility":"hidden"});
+                }
+            $(this).css({"background-color":"#333"});
+			$(this).css({"color":"#F1F1F1"});
+            $("#list-"+this.id).css({"visibility":"visible"});
+		});
+      });
+	</script>
+</head>
+<header>
+<h1 id='header-logo'>
+<a href="index.html">
+    <img class="fade" alt=" gloria musique lutheria de vientos" src="img/logo3.png">
+</a>
+</h1>
+<nav>
+<div id="nav">
+<ul> 
+<li><a href="index.html">Inicio</a></li> 
+<li><a href="perfil-luthier.html">Perfil del Luthier</a></li> 
+<li><a href="#">Servicios</a> 
+  <ul> 
+    <li><a href="#">Luther&iacute;a</a> 
+      <ul> 
+        <li><a href="mantenimiento.html">Mantenimiento</a></li> 
+        <li><a href="reparacion.html">Reparaci&oacute;n</a></li> 
+        <li><a href="overhaul.html">Overhaul</a></li> 
+        <li><a href="reconstruccion.html">Reconstrucci&oacute;n</a></li> 
+      </ul>       
+    </li> 
+    <li><a href="capacitaciones.html">Capacitaciones</a></li>
+    <li><a href="venta-de-instrumentos.html">Venta de Instrumentos de Medio Uso</a></li>
+  </ul> 
+</li> 
+<li><a href="#">Nuestros Clientes</a>
+		<ul>
+			<li><a href="vientos metales.html">Vientos Metales</a></li>
+			<li><a href="vientos maderas.html">Vientos Maderas</a></li>
+			</ul>
+<li><a href="nuestros amigos.html">Nuestros Amigos</a></li> 
+<li><a href='#'>Galer&iacute;a</a>
+<ul>
+			<li><a href="viajes.html">Viajes</a></li>
+			<li><a href="miscelaneos.html">Miscel&aacute;neos</a></li>
+			</ul>
+<li><a href="contacto.html">Contacto</a></li> 
+</ul>  
+</div>
+</nav>
+<div id='right-logo'>
+<img src='img/napbirt_logo_color.png'>
+</div>
+</header>
+<section id="contenido">
+  <div id='#perf-menu-list'>
+     <div id="perf-menu">
+        <ul id="perf-menu-list">
+            <li id='perf-1'>Flauta Traversa</li>
+            <li id='perf-2'>Clarinete</li>
+            <li id='perf-3'>Saxof&oacute;n</li>
+        </ul>
+    </div>
+<div id="foto-perfil" style='margin-top: 100px;'>
+              
+  </div>
+  </div>
+  
+</section>
+</body>
+</html>o
